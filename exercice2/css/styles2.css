@@ -2,13 +2,14 @@
 .puzzle {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px; 
-    grid-template-rows: 150px 300px 150px 150px;    
+    grid-template-rows: 150px 300px 150px 150px; 
     grid-template-areas: 
         "piece01 piece01 piece02 piece03"
         "piece04 piece05 piece05 piece03"
         "piece06 piece07 piece08 piece08"
         "piece06 piece09 piece09 piece10"; 
-  
+    gap: 0px;
+    margin: 20px auto; 
 }
 
 
@@ -30,13 +31,14 @@
 }
 
 .piece-h {
+    grid-row: span 2; 
     width: 100%;
     height: 100%;
-    grid-row: span 2; 
 }
 
 .piece-l {
+    grid-column: span 2; /* Étendre sur deux colonnes */
     width: 100%;
     height: 100%;
-    grid-column: span 2;
 }
+
