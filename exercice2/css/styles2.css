@@ -37,7 +37,7 @@
 }
 
 .piece-l {
-    grid-column: span 2; /* Étendre sur deux colonnes */
+    grid-column: span 2; 
     width: 100%;
     height: 100%;
 }
